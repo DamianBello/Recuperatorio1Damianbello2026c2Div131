@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger House - Tienda Online</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Parcial 1 - División 131</h1>
+    </header>
+
+    <main>
+        <div class="store-container">
+            
+            
+            <section class="shop-section">
+                
+                
+                <div class="shop-header">
+                    <h2>Burger House</h2>
+                    <span id="cart-counter">Carrito (0)</span>
+                </div>
+
+                <hr>
+
+                
+                <div class="controls-row">
+                    
+                    <div class="filter-options">
+                        <label><input type="radio" name="category" value="todas" checked> Todas</label>
+                        <label><input type="radio" name="category" value="clasicas"> Clásicas</label>
+                        <label><input type="radio" name="category" value="especiales"> Especiales</label>
+                        <label><input type="radio" name="category" value="combos"> Combos</label>
+                    </div>
+
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="Buscar productos">
+                    </div>
+
+                    <div class="sort-box">
+                        <select id="sort-select">
+                            <option value="" disabled selected>Ordenar por precio</option>
+                            <option value="menor">Menor precio</option>
+                            <option value="mayor">Mayor precio</option>
+                        </select>
+                    </div>
+                </div>
+
+                <section id="products-container"></section>
+            </section>
+
+            <aside class="cart-aside">
+                <h3>Mi carrito</h3>
+                <ul id="cart-list">
+
+                </ul>
+                <div id="cart-total">Total: $0</div>
+                <button type="button" id="empty-cart-btn">VACIAR CARRITO</button>
+            </aside>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Desarrollado por: Damián Bello</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
